@@ -71,7 +71,7 @@ async def on_message_delete(message):
     print('{}: {}'.format(author, content))
 
 
-#Gives the Member role to new members of the server if the server has one
+#Gives the Member role to new members of the server if the server has a role named members.
 @client.event
 async def on_member_join(member):
     role = discord.utils.get(member.server.roles, name='Member')
